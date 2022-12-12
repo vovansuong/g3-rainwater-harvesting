@@ -1,0 +1,337 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.header-nav {
+    float: right;
+}
+
+/* CONTACT */
+
+.main-contact {
+    background-color: #E6E6FA;
+    margin-top: 93px;
+    height: 705px;
+
+}
+
+.main-contact h1 {
+    text-align: center;
+    color: black;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact {
+    height: 580px;
+    /* background-color: #E6E6FA ; */
+}
+
+.img-contact {
+    width: 49%;
+    margin-left: 1%;
+}
+
+.img-contact img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-contact {
+    margin-left: -12px;
+    background-color: white;
+    width: 49%;
+}
+
+.form-contact h4 {
+    text-align: center;
+    border-bottom: 1px solid brown;
+    padding-top: 20px;
+}
+
+.form-contact .form {
+    /* background-color: white; */
+    height: 92%;
+}
+
+/* FORM */
+.form input, textarea{
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    
+}
+
+.input-flied{
+    position: relative;
+}
+
+.input-flied label{
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    pointer-events: none;
+    user-select: none;
+    
+}
+
+ input:focus{
+    border-color:  #3b5999;
+}
+
+.input-flied input:not(:placeholder-shown) + label,
+.input-flied input:focus ~ label{
+    top: 9%;
+    padding: 0 10px;
+    background-color: white;
+    color: blue;
+    transition: 0.25s
+}
+
+/* .input-flied input:not(:placeholder-shown) + textarea,
+.input-flied textarea:focus ~ label{
+    top: 4%;
+    padding: 0 10px;
+    background-color: white;
+} */
+
+#button{
+    width: 40%;
+    margin-left: 30%;
+    border: none;
+    border-radius: 25px;
+}
+
+#button:hover{
+    background-color: purple;
+    scale: 1.1;
+    opacity: 0.9;
+}
+
+
+/* FOOTER */
+
+
+.footer .footer-header {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer .row {
+    margin: 0px;
+    background-color: black;
+
+}
+
+
+
+.footer-contact .footer-content {
+    color: #ababab;
+}
+
+.footer-contact .footer-content span {
+    margin-left: 20px;
+}
+
+.footer-contact .footer-content ul {
+    margin-left: 110px;
+    margin-top: -35px;
+}
+
+
+
+.footer-map .footer-content iframe {
+    width: 100%;
+    /* height: 100%; */
+}
+
+
+.footer-soical {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --facebook-color: #3b5999;
+    --instagram-color: #e1306c;
+    --youtube-color: #de463b;
+    --twitter-color: #46c1f6;
+    --github-color: #333;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin: 20px 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon i {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon .tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon .tooltip:before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip,
+.icon i {
+    transition: 0.3s;
+}
+
+.icon:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    top: -70px;
+}
+
+.icon:hover i {
+    color: white;
+}
+
+.facebook .tooltip:before,
+.facebook:hover i,
+.facebook .tooltip {
+    background: var(--facebook-color);
+}
+
+.github .tooltip:before,
+.github:hover i,
+.github .tooltip {
+    background: var(--github-color);
+}
+
+.twitter .tooltip:before,
+.twitter:hover i,
+.twitter .tooltip {
+    background: var(--twitter-color);
+}
+
+.instagram .tooltip:before,
+.instagram:hover i,
+.instagram .tooltip {
+    background: var(--instagram-color);
+}
+
+.youtube .tooltip:before,
+.youtube:hover i,
+.youtube .tooltip {
+    background: var(--youtube-color);
+}
+
+@media (min-width: 1021px) and (max-width: 1240px) {
+    .content-4 .card {
+        background-color: rgb(38, 38, 38);
+        height: 450px;
+        margin: 30px;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    /* Footer */
+    .responsive-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact {
+        width: 100%;
+    }
+
+    .footer-map {
+        width: 100%;
+    }
+}
+
+/* Tablet: width >= 740px and < 1024px */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+
+    .responsive-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact {
+        width: 100%;
+    }
+
+    .footer-map {
+        width: 100%;
+    }
+
+}
+
+/* Mobile: width < 740px */
+@media (max-width: 46.1875em) {
+
+   /* CONTACT */
+   .img-contact{
+    display: none;
+   }
+
+   .form-contact {
+    margin-left: 5px;
+    background-color: white;
+    width: 100%;
+}
+
+    /* footer */
+    .responsive-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact {
+        width: 100%;
+    }
+
+    .footer-map {
+        width: 100%;
+    }
+
+}
